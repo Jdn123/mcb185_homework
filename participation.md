@@ -33,8 +33,14 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked question on Tuesday
 	+ Atteded class on Thursday
 	+ Asked question after class on Thursday
-	=Total 5 points
+	+ Total 5 points
 - Week 2
+	+
+	+
+	+
+	+
+	+
+	+Total
 - Week 3
 - Week 4
 - Week 5
