@@ -35,11 +35,11 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked question after class on Thursday
 	+ Total 5 points
 - Week 2
+	+ attended class on tuesday
+	+ joined TA office hours
 	+
 	+
-	+
-	+
-	+
+	+ Introduced myself to 
 	+Total
 - Week 3
 - Week 4
