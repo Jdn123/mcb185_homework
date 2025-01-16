@@ -1,12 +1,12 @@
-# Movie
+# **Movie**
  + Spiderman
  + Top gun
  + Lift
-# Food
+# **Food**
  + Rice
  + Egg
  + Brocolli
-# Hobbies
+# **Hobbies**
  + Sleep
  + Videogames
  + Food
