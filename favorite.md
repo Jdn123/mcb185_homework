@@ -1,12 +1,12 @@
 -Movie
-	+Spiderman
-	+Top gun
-	+Lift
++Spiderman
++Top gun
++Lift
 -Food
-	+Rice
-	+Egg
-	+Brocolli
++Rice
++Egg
++Brocolli
 -Hobbies
-	+Sleep
-	+Videogames
-	+Food
++Sleep
++Videogames
++Food
