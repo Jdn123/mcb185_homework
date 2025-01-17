@@ -38,7 +38,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ attended class on tuesday
 	+ joined TA office hours
 	+ attended class on Thursday
-	+
+	+ answered something in class
 	+ Introduced myself to Michelle Z
 	+Total
 - Week 3
