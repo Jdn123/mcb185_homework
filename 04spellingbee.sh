@@ -1,2 +1,2 @@
-gunzip -c ../MCB185/data/dictionary.gz | grep -E "^[oznicar]{3,}[oznicar]$" |grep "r" 
+gunzip -c ../MCB185/data/dictionary.gz | grep -E "^[oznicar]{4,}$" |grep -c "r" 
 
