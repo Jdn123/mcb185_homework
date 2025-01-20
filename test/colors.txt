@@ -13,3 +13,5 @@ lightslategray
 lightslategrey
 lightsteelblue
 lightyellow
+
+cut -f1 ../MCB185/data/colors_extended.tsv | grep "^light" > colors.txt
