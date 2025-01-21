@@ -40,8 +40,14 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ attended class on Thursday
 	+ answered something in class
 	+ Introduced myself to Michelle Z
-	+Total
+	+ Total 5
 - Week 3
+	+ compared solutions on Discord
+	+ 
+	+ 
+	+ 
+	+ 
+	+ 
 - Week 4
 - Week 5
 - Week 6
