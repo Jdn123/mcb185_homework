@@ -43,11 +43,11 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Total 5
 - Week 3
 	+ compared solutions on Discord
-	+ 
-	+ 
-	+ 
-	+ 
-	+ 
+	+ Class on tuesday
+	+ TA office hours
+	+ Class on thursday
+	+ Introduced myself to Zoey
+	+ demo in class on python
 - Week 4
 - Week 5
 - Week 6
