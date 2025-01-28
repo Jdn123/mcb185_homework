@@ -3,3 +3,10 @@ zless ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.gbff.gz | grep -c "CDS"
 
 zless ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.gbff.gz | grep -c "CDS.*complement"
 2214
+
+$ zless ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.gbff.gz | grep -c "[[:blank:]]gene[[:blank:]]"
+4639
+
+darma@PlantBoi ~/Code/mcb185_homework
+$ zless ../MCB185/data/GCF_000005845.2_ASM584v2_genomic.gbff.gz | grep -c "gene.*complement"
+2347
