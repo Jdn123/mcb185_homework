@@ -110,3 +110,37 @@ if a < b and a > b: print('impossible')
 if not False: print('true') #not False makes it True
 if not a == 3: print('nice')
 
+# floating point warning
+a = 0.3
+b = 0.1 * 3 # above it returns .3000000004
+if   a < b: print('a < b') # b is greater than a because of floating point error
+elif a > b: print('a > b') 
+else:       print('a == b')
+
+# so never use inequalities for floating point numbers: use
+
+print(abs(a - b)) # 5.551115123125783e-17
+if abs(a - b) < 1e-9: print('close enough') # numbers are close enough to each other, diff is product
+# of floating point error
+
+# or use this built-in function
+if math.isclose(a, b): print('close enough') #isclose does the difference and comparison
+
+# string comparison
+# difficult because letters are converted to ASCII
+aa = 'A'
+bb = 'a'
+if aa > bb: print("A > a")
+else: print("A < a") # prints this out, so a > A
+
+#mismatch error: comparison must be same type
+aa = 1
+bb = 't'
+print(type(aa), type(bb)) # <class 'int'> <class 'str'>
+# if aa < bb: print("1 < t") # TypeError: '<' not supported between instances of 'int' and 'str'
+
+def nonetest(a,b,c):
+	a+b+c
+
+print(nonetest(1,2,3)) # none because function does not return anything
+
