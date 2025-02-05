@@ -67,6 +67,23 @@ for i in range(7):
     if i % 2 == 0: even += 1;    # print(i, 'is even')  #; to keep things on the same line
     else:          odd += 1;     # print(i, 'is odd')   
 
+#Random Numbers
+
+import random
+
+# print(random.random()) # produces a number 0 <= # < 1
+# random.seed(1) # seed 1
+# print(random.randint(1,6)) # dice roll, prints a number between 1 <= 1 <= 6
+
+#Compound Assignment
+x = 0
+x += 1
+#print(x) #1
+
+# -= 1 # subtract 1
+# *= 1 # mutliple by 1
+x *= 1
+#print(x) #1
 
 
 
