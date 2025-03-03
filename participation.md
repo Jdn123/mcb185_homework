@@ -33,7 +33,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked question on Tuesday
 	+ Atteded class on Thursday
 	+ Asked question after class on Thursday
-	+ Total 5 points
+	+ Total 5 
 - Week 2
 	+ attended class on tuesday
 	+ joined TA office hours
@@ -44,14 +44,50 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 3
 	+ compared solutions on Discord
 	+ Class on tuesday
-	+ TA office hours
 	+ Class on thursday
-	+ Introduced myself to Zoey
+	+ Introduced myself to Zoe
 	+ demo in class on python
+	+ Total 5 
 - Week 4
+	+ attended class on tuesday
+	+ attended class on thursday
+	+ office hours
+	+ answered a question in class
+	+ demo
+	+ Total 5
 - Week 5
+	+ attended class on tuesday
+	+ compared answers with classmate over discord
+	+ demo on tuesday
+	+ attended class on Thursday
+	+
+	+ Total 4
 - Week 6
+	+ attended class on tuesday
+	+ attended class on thursday
+	+ demo on thursday
+	+ offered answers on discord
+	+
+	+ Total 4
 - Week 7
+	+ attend class on tuesday
+	+ attend class on thursday
+	+ answered some questions in class
+	+ offered answers on discord
+	+
+	+ Total 4
 - Week 8
+	+ attend class on tuesday
+	+ introduced myself with alex on voice chat and talked about code
+	+ attend class on thursday
+	+ discussed answers on discord
+	+ 
+	+ Total 4
 - Week 9
+	+ 
+	+
+	+
+	+
+	+
+	+
 - Week 10

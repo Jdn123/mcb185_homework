@@ -78,7 +78,7 @@ for i in range(1000):
     if count%2 == 1: print("+")
     if count%2 == 0: print("-")
 
-"""
+
 
 count = 0
 while True:
@@ -87,3 +87,35 @@ while True:
     print( 4 / ( (count+1) * (count+2) * (count+3) ))    
     if count%2 == 1: print("+")
     if count%2 == 0: print("-")
+
+"""
+
+#in class exam: practice
+
+def prime(x):
+    if x == 1: return False
+    for i in range(2,x):
+        if x%i == 0: return False; break
+    return True
+
+print(prime(51), prime(47))
+
+for y in range(51, 0, -2):
+    if prime(y) == True: print(y, "*", sep='')
+    else: print(y)
+
+
+
+def prime(x):
+    if x == 1: return False
+    for i in range(2,x//2 + 1):
+        if x%i == 0: return False
+    return True
+
+def is_prime(n):
+    for den in range(2, n//2 +1):
+        if n % den == 0: return False
+    return True
+
+print(is_prime(1), prime(1))
+
