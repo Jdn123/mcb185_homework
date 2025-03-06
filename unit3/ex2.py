@@ -39,3 +39,16 @@ while True:
 
     # print(above, ':', below, sep='')
     print(above/below)
+
+
+
+
+
+
+
+
+
+
+
+
+
