@@ -18,7 +18,10 @@ for i in range(trials):
     stop = False
     for x in range(people):
         for y in range(x+1, people):
-            if birthdays[x] == birthdays[y]:        same += 1;      stop = True;     break
+            if birthdays[x] == birthdays[y]:        
+                same += 1
+                stop = True     
+                break
         if stop:                    break
     print( same )
 
