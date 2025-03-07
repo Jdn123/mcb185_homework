@@ -87,7 +87,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ attend class on Tuesday
 	+ helped classmate on discord (git clone stuff)
 	+ attend class on Thursday
-	+ 
+	+ hopped on call with alex and others (coderie)
 	+
 	+
 - Week 10

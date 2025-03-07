@@ -16,6 +16,10 @@ with open(path) as fp:
 
 """
 
+
+
+"""
+
 for defline, seq in mcb185.read_fasta(arg.fasta):
     mask = ''
     for i in range(len.....):
@@ -40,5 +44,11 @@ for defline, seq in mcb185.read_fasta(arg.fasta):
     if len(mask) == 0:      print(seq)
     else:                   print(mask)
 
+
+"""
+
+
+import mcb185
+#library to read fasta files
 
 

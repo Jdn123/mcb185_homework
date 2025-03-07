@@ -13,7 +13,13 @@ bases2 = list(nbases)
 
 
 
-print('   ', 'A', 'C', 'G', 'T', '\n', end='')
+#print('   ', 'A', 'C', 'G', 'T', '\n', end='')
+
+print('    ', end='')
+for bas1 in bases1:
+    print(bas1, end=' ')
+print('\n', end='')
+
 for bas1 in bases1:
 
     print(bas1, ' ', end='')

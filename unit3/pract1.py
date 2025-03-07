@@ -10,7 +10,7 @@ def is_prob(vals):
     
     for val in vals:
         tot += float(val)
-        if val > 1:             return False
+        if val > 1 or val < 0:             return False
 
     if math.isclose(tot, 1):    return True
     return False
