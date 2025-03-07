@@ -104,8 +104,7 @@ b = list()
 
 # list can also turn a string into a list
 
-c = 'ABCDEFGHIJK'
-d = list(c)
+d = list()
 # print(c, d)
 
 
