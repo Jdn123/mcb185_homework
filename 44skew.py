@@ -8,11 +8,17 @@ w = sys.argv[2]
 seq1 = 'ACGTACGTGGGGGACGTACGTCCCCC'
 g = 10
 
-print(0, sequence.gc_comp(  seq1[0:g]), sequence.gc_skw( seq1[0:g]))
+
+og = seq1[0:g]
+print(0, sequence.gc_comp(og), sequence.gc_skw(og))
 
 x = 1
-for i in range(g, len(seq1)-g +1, 1):
-    s = seq1[i:i+g]
+for i in range(0, len(seq1) - g + 1, 1):
+    s1 = seq1[g : g + i]
+
+    s2 = seq[i: i+1]
+
+
     print(x, sequence.gc_comp(s), sequence.gc_skw(s))
     x += 1
 
