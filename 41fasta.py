@@ -2,6 +2,8 @@ import sys
 import mcb185
 
 
+#defline prints identifer
+#seq is the actual sequence
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
     #print(defline[:30], seq[:40], len(seq))
     a = 0
@@ -51,8 +53,8 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
     for n in counts:
         print(n/len(seq), end=' ')
     print()
-    """
-
+    
+    
 
     nts = []
     counts = []
@@ -70,12 +72,12 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
         print(nt, n, n/len(seq))
     print()
 
+    """
     
-
-
-
-#defline prints identifer
-#seq is the actual sequence
+    print(name, end=' ') #name is chr name
+    for nt in 'ACGTN': 
+        print(seq.count(nt) / len(seq), end=' ') #counts all the 'nt' in the seq string
+    print() #close print
 
 
 

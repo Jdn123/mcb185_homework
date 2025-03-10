@@ -89,5 +89,12 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ attend class on Thursday
 	+ hopped on call with alex and others (coderie)
 	+
-	+
+	+ Total 4
 - Week 10
+	+
+	+
+	+
+	+
+	+
+	+
+- TOTAL = 
