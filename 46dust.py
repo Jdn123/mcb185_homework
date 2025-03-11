@@ -18,7 +18,7 @@ def entropy(dna):
     probs[3] = dna.count('T') / len(dna)
 
     for prob in probs:
-        if prob > 0 and prob < 1:
+        if prob > 0:
             h -= prob * math.log2(prob)
 
     return h

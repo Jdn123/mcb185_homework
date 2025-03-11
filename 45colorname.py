@@ -9,7 +9,7 @@ target[2] = int(sys.argv[4])
 
 ########################################
 
-def dtc(D, Q): #calc distance
+def dtc(D, Q): #calc distance #modify P
     P = D.split(',')
 
     d = 0
@@ -22,7 +22,7 @@ def dtc(D, Q): #calc distance
 with open(colorfile, 'rt') as fp: #create list of only RGB values
     cols = []
     colors = []
-
+    
     for line in fp:
         cols.append(line.split()[2])
         colors.append(line.split()[0])
