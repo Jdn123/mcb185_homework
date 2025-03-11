@@ -10,7 +10,7 @@ for i in range(1, entries):
     end = tot + 1000
     defline ='>'
     linelist = []
-    defline = defline + 'Chr' + str(i) + ' ' + str(tot) + '-' + str(end)
+    defline = defline + 'Chr' + str(i) + ' ' + str(tot+1) + '-' + str(end)
     tot += 1000
     print(defline)
 
