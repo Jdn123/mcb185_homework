@@ -15,7 +15,7 @@ def kd(seq):
     tot = 0
     for nt in seq:
         if nt in let:
-            tot += phobs[let.index(nt)]
+                tot += phobs[let.index(nt)]
     return tot / len(seq)
 
 """
