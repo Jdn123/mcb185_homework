@@ -13,6 +13,9 @@ phobs = [
 
 def kd(seq):
     tot = 0
+    if 'P' in seq:
+        return 0
+
     for nt in seq:
         if nt in let:
                 tot += phobs[let.index(nt)]
@@ -94,7 +97,7 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
         print(defline)
         x += 1
                         
-print(x) #521 proteins
+print(x) #468- proteins
             
     
 
