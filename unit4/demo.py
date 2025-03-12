@@ -77,4 +77,5 @@ print(total / len(lengths))
 
 """
 
-
+rt ='ATG'
+print(rt[::-1])

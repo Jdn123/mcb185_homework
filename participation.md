@@ -91,8 +91,8 @@ more than one point per category. There is a maximum of 5 points each week.
 	+
 	+ Total 4
 - Week 10
-	+
-	+
+	+ attend class on Tuesday
+	+ compared/talked about answers on discord
 	+
 	+
 	+

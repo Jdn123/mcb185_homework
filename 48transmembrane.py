@@ -33,7 +33,7 @@ with gzip.open(sys.argv[1], 'rt') as fp:
     cont = 0 
     i = 0
 
-    per = [] #temporary storage of a list per defline
+
     seq = ''
     for f in fp:
         if f.count('>') != 0:
@@ -58,7 +58,7 @@ with gzip.open(sys.argv[1], 'rt') as fp:
 
         
         if len(defline) > len(aas):
-            aas.append(per)
+            aas.append(sqs)
 
     
 #print(len(defline))
