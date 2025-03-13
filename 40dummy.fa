@@ -1,11 +1,14 @@
->asdfasdfasdf asdf whole genome
+>asdfasdf1asdf whole genome
 ATGAAATAA
 
->asdfasdfasdf asdf whole genome
+>asdfasdf2 asdf whole genome
 AATGAAAGGGTAA
 
->asdfasdfasdf asdf whole genome
+>asdfasdf3 asdf whole genome
 AAATGAAATAA
 
->asdfasdfasdf asdf whole genome
+>asdfasdf4 asdf whole genome
 ATGAAAATGAAAAAATAA
+
+>asdfasdf5
+ATGAAAAAATAAATGAAAAAATAA

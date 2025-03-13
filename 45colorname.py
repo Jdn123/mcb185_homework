@@ -11,6 +11,7 @@ target[2] = int(sys.argv[4])
 
 def dtc(D, Q): #calc distance #modify P
     P = D.split(',')
+    #print(P, '1')
 
     d = 0
     for p, q in zip(P, Q):
@@ -32,6 +33,11 @@ with open(colorfile, 'rt') as fp: #create list of only RGB values
 
 idx = 0 # index of lowest number
 for i, col in enumerate(cols):
+
+    #print(col)
+    P = col.split(',')
+    #print(P)
+
     low = 1000 #massive inital low so first idx is always lower and will be initialized
     if dtc(col, target) < low:
         low == dtc(col, target)

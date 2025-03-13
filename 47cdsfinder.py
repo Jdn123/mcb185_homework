@@ -23,6 +23,8 @@ def six_frame(seq):
 def translate1(seq):
     prots =[]
 
+
+
     frame = 0
     for i in range(0, len(seq)-3+1, 3): 
         pro = [] # need to empty every loop
@@ -38,12 +40,35 @@ def translate1(seq):
                 else:
                     pro.append('X')            
         
+        #print(pro)
         if len(pro) >= least: #add pro to prots
             a = ''.join(pro)
+            #print(a)
             prots.append(a)
     return prots
 
+def translate2(seq):
+    prots =[]
 
+    aas = mcb185.translate(seq)    
+    #print(aas)
+        
+    pro = ''    
+    viable = False
+    for aa in aas:
+        if aa == 'M':
+            viable = True
+        if aa == '*':
+            pro += aa + '-'
+            viable = False 
+        if viable == True:
+            pro += aa
+
+    list_pro = pro.split('-')
+    for po in list_pro:
+        if len(po) >= least and po != '*': #add pro to prots
+            prots.append(po)
+    return prots
 
 count = 0
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
@@ -55,15 +80,14 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
     
     cds = []
 
-    for frame in frames: 
-        prots = translate1(frame)
+    for frame in frames:
+        #prots = translate1(frame) 
+        prots = translate2(frame)
         #print(prots)
         for pro in prots:
             if pro != []:
                 cds.append(pro)
-
     #print(cds)
-    
     for cd in cds:
         print('>', g, '-', 'protein', '-', count, sep='', end='') 
         print( '\n', end='')
@@ -72,6 +96,7 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
         print()
         count += 1
     
+     
     
     
 
