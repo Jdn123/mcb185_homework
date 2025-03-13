@@ -32,15 +32,15 @@ with open(colorfile, 'rt') as fp: #create list of only RGB values
 ########################################
 
 idx = 0 # index of lowest number
+low = 10000 #massive inital low so first idx is always lower and will be initialized
 for i, col in enumerate(cols):
 
     #print(col)
     P = col.split(',')
     #print(P)
 
-    low = 1000 #massive inital low so first idx is always lower and will be initialized
     if dtc(col, target) < low:
-        low == dtc(col, target)
+        low = dtc(col, target)
         idx = i
 
 print(colors[idx], cols[idx])

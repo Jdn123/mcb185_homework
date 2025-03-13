@@ -11,6 +11,12 @@ def dtc(P, Q):
 		d += abs(int(p) - int(q))
 	return d
 
+def dist(P, Q):
+    d = 0
+    for p, q in zip(P, Q):
+        d += (int(p) - int(q)) ** 2
+    return d ** .5
+
 with open(sys.argv[1]) as fp:
     color = ''
     least = 1000000
@@ -32,6 +38,7 @@ with open(sys.argv[1]) as fp:
         #print(i)
 
         if d < least:
+            least = d
             color = cols[0]
             value = RGB
 
