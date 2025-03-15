@@ -1,5 +1,6 @@
 import sys, mcb185
 
+import itertools
 
 
 
@@ -15,5 +16,31 @@ for kmer, n in kcount.items():
     #print(kmer, n)
     None
 
+#print(kcount)
+
+for nts in itertools.product('ACGT', repeat = k):
+    str_nts = ''.join(nts)
+
+    if str_nts in kcount:       print(str_nts, kcount[str_nts])
+    else:                       print(str_nts, 0)
+
+
+
+
+"""
+
+nts_comb = {}
+for nts in itertools.product('ACGT', repeat = k):
+    if nts not in nts_comb:
+        nts_comb[''.join(nts)] = 0
+    nts_comb[''.join(nts)] += 1
+    
+for comb in nts_comb:
+    print(comb)    
+
+"""
+
+
+    
 
 
