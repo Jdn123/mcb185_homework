@@ -93,8 +93,8 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 10
 	+ attend class on Tuesday
 	+ compared/talked about answers on discord
-	+
-	+
-	+
-	+
-- TOTAL = 
+	+ attended cat's coderie
+	+ went to office hours
+	+ 
+	+ Total 4
+- TOTAL = 44

@@ -1,7 +1,6 @@
 import sys
 import mcb185
 
-
 let = [
     "I", "V", "L", "F", "C", "M", "A", "G", "T", "S", "W", "Y", "P", 
     "H", "E", "Q", "D", "N", "K", "R"]
@@ -10,16 +9,80 @@ phobs = [
     4.5, 4.2, 3.8, 2.8, 2.5, 1.9, 1.8, -0.4, -0.7, -0.8, -0.9, -1.3, 
     -1.6, -3.2, -3.5, -3.5, -3.5, -3.5, -3.9, -4.5]
 
-
-def kd(seq):
+def kd(seq): #only calculating hydrophobicity
     tot = 0
-    if 'P' in seq:
-        return 0
-
     for nt in seq:
         if nt in let:
-                tot += phobs[let.index(nt)]
+            tot += phobs[let.index(nt)]
     return tot / len(seq)
+
+
+def is_tag(seq, thres, win):
+    kd_val = 0
+
+    #loc : N or C
+
+    #print(sq)
+    #print(type(sq))
+    #print(len(sq))
+    #sliding window to search for a tag
+    for i in range(0, len(seq) - win + 1, 1):
+        #print(i)
+        #print(sq[i:i+win])
+        sl = seq[i:i+win]
+        kd_val = kd(sl)
+        if kd_val >= thres and 'P' not in sl: #must meet hydrophobicity + proline requirement
+            return True
+    
+    return False
+
+x = 0
+for defline, seq in mcb185.read_fasta(sys.argv[1]):
+    #print(seq)
+    #print(defline, '\n', seq)
+
+    signal = is_tag(seq[0:30], 2.5, 8)
+    trans = is_tag(seq[30:], 2.0, 11)
+
+    if signal == True and trans == True:
+        print(defline)
+        x += 1
+                    
+print(x) #468- proteins
+            
+    
+
+
+
+"""
+    for i in range(0, len(Nterm)-8+1, 1):
+        if kd(Nterm[i:i+8]) >= 2.5:
+            signal = True
+
+    for i in range(0, len(Cterm)-11+1, 1):
+        if kd(Cterm[i:i+11]) >= 2.0:
+            trans = True 
+"""
+
+
+
+
+#print(kd('MKKTAAGGCTAGGAGGTAGGAGGAGGGAGGAGGAGGAGGAGGGGAG'))
+
+
+
+"""
+seq = 'MKKTAAGGCTAGGAGGTAGGAGGAGGGAGGAGGAGGAGGAGGGGAG'
+
+tot = 0
+for nt in seq:
+    if nt in aas:
+        idx = aas.index(nt)
+        #print(idx)
+        tot += phobs[idx]
+
+"""
+
 
 """
 aas = []
@@ -73,55 +136,3 @@ with gzip.open(sys.argv[1], 'rt') as fp:
 for line, aa in zip(defline, aas):
 
 """
-
-x = 0
-for defline, seq in mcb185.read_fasta(sys.argv[1]):
-    #print(seq)
-    #print(defline, '\n', seq)
-
-    signal = False
-    trans = False
-
-    Nterm = seq[0:30]
-    Cterm = seq[30:]
-
-    for i in range(0, len(Nterm)-8+1, 1):
-        if kd(Nterm[i:i+8]) >= 2.5:
-            signal = True
-
-    for i in range(0, len(Cterm)-11+1, 1):
-        if kd(Cterm[i:i+11]) >= 2.0:
-            trans = True 
-
-    if signal == True and trans == True:
-        print(defline)
-        x += 1
-                        
-print(x) #468- proteins
-            
-    
-
-
-
-
-
-
-
-
-#print(kd('MKKTAAGGCTAGGAGGTAGGAGGAGGGAGGAGGAGGAGGAGGGGAG'))
-
-
-
-"""
-seq = 'MKKTAAGGCTAGGAGGTAGGAGGAGGGAGGAGGAGGAGGAGGGGAG'
-
-tot = 0
-for nt in seq:
-    if nt in aas:
-        idx = aas.index(nt)
-        #print(idx)
-        tot += phobs[idx]
-
-"""
-
-
