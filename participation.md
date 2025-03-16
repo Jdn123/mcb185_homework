@@ -95,6 +95,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ compared/talked about answers on discord
 	+ attended cat's coderie
 	+ went to office hours
-	+ 
-	+ Total 4
-- TOTAL = 44
+	+ thursday class cancelled 
+	+
+	+ Total 5
+- TOTAL = 45
